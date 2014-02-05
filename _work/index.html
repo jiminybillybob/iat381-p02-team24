@@ -3,46 +3,39 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-	    <!-- This defines what character set (language/fonts) by this webpage -->
     	<meta charset="utf-8">
     	<link href="css/main.css" rel="stylesheet">
-		
 		<title> IAT381 P02 Week 04: Coded interactive elements </title>
-
 	</head>
-	
 	<body>
-
-		<h1>Heading 1</h1>
-		<h2>Heading 1</h1>
-		<h3>Heading 1</h1>
-		<h4>Heading 1</h1>
-
+    
 		<nav>
-			<a href=#"hiroshima"><a href="http://www.google.com">
-			<img class="menuButton" src="images/hiroshimaButton.png" alt="Hiroshima Style"></a></a>
-			
-			<a href=#"osaka"></a>
-			
-			<a href=#"monjayaki"></a>
+        	<div class="container">
+            <img id="logo" src="images/nav_logo.png"><p id="nav_links"><a href="#">Pizzas</a><a href="#">Customize</a><a href="#">My Orders</a></p>
+            </div>
 		</nav>
+  
+        <section> 
+        	
+            <div class="container">
 
-		<p>This is a paragraph</p>
-
-		<button type="submit" class="hiroButton" onclick="window.location.href='http://www.google.com'"> Hiroshima <img src="images/hiroshimaButton.png"> </button>
-
-		<button type="submit" class="osakaButton" onclick="window.location.href='http://www.google.com'"> Osaka <img src="images/osakaButton.png"> </button>
-
-		<button type="submit" class="monjaButton" onclick="window.location.href='http://www.google.com'"> Monjayaki <img src="images/monjayakiButton.png"> </button>
-
+           		<h1>Heading 1</h1>
+           		<h2>Heading 2</h2>
+           		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula, erat sit amet vulputate porta, urna justo tempor augue, sed varius odio dui a urna. Mauris id fringilla lectus, ultrices elementum felis. Nam ultrices orci quis cursus laoreet. Curabitur blandit eleifend nulla ac dictum. Aliquam accumsan, tortor sit amet varius iaculis, nunc enim euismod justo, nec semper turpis quam eget nisi. Aenean eu mi at est aliquam congue. Pellentesque adipiscing vitae erat at facilisis. Nunc neque eros, convallis vel erat mollis, porttitor rutrum odio. Quisque gravida odio eros, sit amet tincidunt metus faucibus et. Etiam vel viverra diam, at dapibus sem. Fusce sit amet accumsan magna. Suspendisse congue porttitor felis cursus bibendum.</p>
+    
+          		<a href="http://www.google.com"><img class="category_button" src="images/hiroshimaButton.png"></a>
+    
+           		<a href="http://www.google.com"><img class="category_button" src="images/osakaButton.png"></a>
+    
+           		<a href="http://www.google.com"><img class="category_button" src="images/monjayakiButton.png"></a>
+            
+            	<div class="thumbnail">
+                    <div class="thumbnail_overlay"><h2>The Tokyo Classic</h2></div>
+                    <img src="images/preview.jpg">
+                </div>
+            </div>
 		
-		<section id="hiroshima">	
-
-		</section>
-
-		<!-- Start of test EmmailUs button w/ rollover/hover state -->
-		
-
-
+        </section>
+        
 	</body>
 </html>

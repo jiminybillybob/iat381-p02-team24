@@ -1,102 +1,87 @@
+html {
+	font-size: 62.5%;
+}
+
 body {
 	font-family: Arial, Verdana, sans-serif;
-	font-size: 10px; 
 	color: black;
+	height:100%;
+	width:100%;
+	padding: 0;
+	margin: 0;
 }
-
-h1 {
-	font-size: 2.5rem;
-}
-
-h2 {
-	font-weight: normal;
-	font-size: 2rem; 
-}
-
-h2 a {
-	font-style: italic;
-}
-
 img {
 	height: auto; 
 	width: auto;
 	max-width: 100%;
-	border: 1px solid #888888; 
 }
-/* Img w/ red border hover state */
-a:hover {
-	color: #888888; 
-	text-decoration: none;
+a {
+	text-decoration:none;
 }
-
-.menuButton {
-	height: auto;
-	width: auto;
+p {
+	font-size: 1.2rem;
 }
-
-.menuButton:hover {
-	border: 2px solid red;
-	}
-
-/* button type w/ img background */
-.hiroButton {
-	display: block;
-	float: left;
-	height: auto;
-	width: auto;
-	font-size: 11px;
-	text-align: center;
-	border: none;
-	/*color: rgba(0, 0, 0, .0);*/
-	/*top: 50%;
-	left: 50%;*/
-	background-color: black;
-	color: black;
-	vertical-align:text-top;
-
+.container {
+	margin: 0 auto;
+	max-width: 960px;
+	padding: 10px 20px;
 }
-
-.osakaButton {
-	display: block;
-	float: left;
-	clear: both;
-	height: auto;
-	width: auto;
-	font-size: 11px;
-	text-align: center;
-	border: none;
-	/*color: rgba(0, 0, 0, .0);*/
-	/*top: 50%;
-	left: 50%;*/
-	background-color: black;
-	color: black;
-	vertical-align:text-top;
-
+h1 {
+	font-size: 3.5rem;
+}
+h2 {
+	font-weight: normal;
+	font-size: 2.5rem; 
+}
+.category_button {
+	opacity:.8;
+	display:block;
+	margin-bottom: 4px;
+}
+.category_button:hover {
+	opacity:1;
+}
+.thumbnail {
+	position:relative;
+	display: inline-block;
+}
+.thumbnail_overlay {
+	opacity:0;
+	width:100%;
+	height:100%;
+	position:absolute;
+	color:#fff;
+	text-align:center;
+	background: rgba(0, 0, 0, .8);
+}
+.thumbnail_overlay:hover {
+	opacity:1;
 }
 
-.monjaButton {
-	display: block;
-	float: left;
-	clear: both;
-	height: auto;
-	width: auto;
-	font-size: 11px;
-	text-align: center;
-	border: none;
-	/*color: rgba(0, 0, 0, .0);*/
-	/*top: 50%;
-	left: 50%;*/
-	background-color: black;
-	color: black;
-	vertical-align:text-top;
+/*-------------------------------------------------------------*/
 
+nav {
+	height:70px;
+	width:100%;
+	background: #000;
+	margin: 0;
+	padding: 0;
 }
-
-.hiroButton:hover, .osakaButton:hover, .monjaButton:hover {
-	z-index: 30;
-	/*opacity: .1;*/
-	/*color: rgba(0, 0, 0, 1);*/
-	color: red;
-	background-image: url("images/blackOverlay.png");
-
+#logo {
+	width:86px;
+}
+#nav_links {
+	float:right;
+}
+#nav_links a{
+	font-size:1.5rem;
+	color: #fff;
+	font-weight:bold;
+	margin-left: 18px;
+}
+#nav_links a:hover{
+	font-size:1.5rem;
+	color: #C33;
+	font-weight:bold;
+	margin-left: 18px;
 }
