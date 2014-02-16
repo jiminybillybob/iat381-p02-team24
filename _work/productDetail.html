@@ -1,0 +1,69 @@
+<!-- IAT381 P02 Week 04: Coded interactive elements -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<link href="css/main.css" rel="stylesheet">
+      <link href="css/grid.css" rel="stylesheet">
+		<title> IAT381 P02 Week 06: Product Details </title>
+	</head>
+	<body>
+    
+		<nav>
+        	<div class="container">
+            <img id="logo" src="images/nav_logo.png"><p id="nav_links"><a href="#">Pizzas</a><a href="#">Customize</a><a href="#">My Orders</a></p>
+          </div>
+		</nav>
+
+    <div class="product_detail">
+      <div class="grid">
+        <div class="col-1of2">
+
+          <img src="http://placehold.it/400x500">
+
+        </div> <!-- end of div col-1of2 -->
+
+        <div class="col-1of2">
+          <h1>The Classic Tokyo</h1>
+          <h2>$15.00</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula, erat sit amet vulputate porta, urna justo tempor augue, sed varius odio dui a urna. Mauris id fringilla lectus, ultrices elementum felis. Nam ultrices orci quis cursus laoreet. Curabitur blandit eleifend nulla ac dictum.</p>
+
+          <ol>
+            <li><em>First reason why kittens are death</em></li>
+            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+            <li>Aliquam tincidunt mauris eu risus.</li>
+          </ol>
+
+          <button type="submit" class="addButton" onclick="window.location.href='http://www.google.com'"> Add to order
+          </button>
+
+           <form name="myform" class="quantity" action="http://www.mydomain.com/myformhandler.cgi" method="POST">
+            <div align="center">
+              <select name="mydropdown">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              </select>
+            </div>
+          </form>
+        
+        </div> <!--  end of div col-2of2 -->
+
+      </div> <!-- end of div grid -->
+  </div> <!-- end of class product_detail -->
+	</body>
+</html>

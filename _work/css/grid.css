@@ -1,0 +1,50 @@
+/* grid.css; defining grids for my site*/
+
+[class*='col-']{
+	float: left;
+	padding: 0;
+	text-align: center;
+}
+
+/* specifies width of grid*/
+.col-1of2 {
+	width: 50%;
+}
+.col-1of3 {
+	width: 15%;
+}
+.col-2of3 {
+	width: 50%;
+}
+.col-3of3 {
+	width: 35%;
+}
+
+
+.grid:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* when browser hits breakpoint of 800px width, col-1of2 reverts back to 100% width */
+@media (max-width: 900px) {
+	.col-1of2 {
+		width: 100%;
+	}
+	.col-1of3 {
+		width: 100%;
+	}
+	.col-2of3 {
+		width: 100%;
+	}
+	.col-3of3 {
+		width: 100%;
+	}
+}
