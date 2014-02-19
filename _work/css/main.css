@@ -71,6 +71,10 @@ h2 {
 }
 
 /*-------------------------------------------------------------*/
+<<<<<<< Updated upstream
+=======
+/* Product details template*/
+>>>>>>> Stashed changes
 
 .quantity {
 	float: left;
@@ -85,6 +89,19 @@ h2 {
 	float: right;
 }
 .addButton:hover {
+	background-color: #C33;
+}
+.favButton {
+	background-color: black;
+	border: none;
+	width: 100px;
+	height: 40px;
+	color: white;
+	font-size: 1.5rem;
+	float: right;
+	margin-left: 20;
+}
+.favButton:hover {
 	background-color: #C33;
 }
 
@@ -126,6 +143,7 @@ nav .container {
 	height: 100%;
 	display: ;
 }
+<<<<<<< Updated upstream
 
 /*-------------------------------------------------------------*/
 
@@ -158,3 +176,29 @@ nav .container {
 	float:right;
 	}
 }
+=======
+/* ----------------Footer-------------------- */
+footer {
+	height:70px;
+	width:100%;
+	background: #000;
+	color: white;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+/* ----------------About Page---------------------------- */
+#aboutBlurb {
+	float: left;
+	margin-left: 2rem;
+}
+.blackNav{
+	display: inline-block;
+	background-color: black;
+	color: white;
+	padding: 1rem 1.25rem;
+	text-decoration: none;
+	width: 100%;
+}
+>>>>>>> Stashed changes

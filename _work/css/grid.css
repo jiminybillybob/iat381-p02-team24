@@ -35,13 +35,20 @@
 	width: 50%;
 }
 .col-1of3 {
-	width: 15%;
+	width: 25%;
 }
 .col-2of3 {
-	width: 50%;
+	width: 25%;
 }
 .col-3of3 {
+<<<<<<< Updated upstream
 	width: 33.33%;
+=======
+	width: 50%;
+}
+.col-1of5{
+	width: 20%;
+>>>>>>> Stashed changes
 }
 
 .grid:after {
@@ -57,7 +64,7 @@
 }
 
 /* when browser hits breakpoint of 800px width, col-1of2 reverts back to 100% width */
-@media (max-width: 900px) {
+@media (max-width: 536px) {
 	.col-1of2 {
 		width: 50%;
 	}
