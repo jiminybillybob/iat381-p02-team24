@@ -10,6 +10,14 @@ body {
 	padding: 0;
 	margin: 0;
 }
+
+.container {
+	margin: 0 auto;
+	max-width: 960px;
+	padding: 0 25px;
+	position:relative;
+}
+
 img {
 	height: auto; 
 	width: auto;
@@ -23,20 +31,18 @@ p, ul, ol {
 	text-align: left;
 	clear: both;
 }
-.container {
-	margin: 0 auto;
-	max-width: 960px;
-	padding: 10px 20px;
-}
+
 h1 {
 	font-size: 3.5rem;
 	text-align: left;
 }
+
 h2 {
 	font-weight: normal;
 	font-size: 2.5rem; 
 	text-align: left;
 }
+
 .category_button {
 	opacity:.8;
 	display:block;
@@ -65,12 +71,7 @@ h2 {
 }
 
 /*-------------------------------------------------------------*/
-/* Product details template*/
-.product_detail {
-	margin: 0 auto;
-	max-width: 960px;
-	padding: 10px 20px;
-}
+
 .quantity {
 	float: left;
 }
@@ -93,20 +94,26 @@ nav {
 	height:70px;
 	width:100%;
 	background: #000;
-	margin: 0;
-	padding: 0;
 }
+
+nav .container {
+	margin: 0 auto;
+	padding: 10px 25px;
+	max-width: 960px;
+	position:relative;
+}
+
 #logo {
-	width:86px;
+	max-width:86px;
 }
 #nav_links {
 	float:right;
 }
 #nav_links a{
-	font-size:1.5rem;
+	font-size:1.4rem;
 	color: #fff;
 	font-weight:bold;
-	margin-left: 18px;
+	margin-left: 16px;
 }
 #nav_links a:hover{
 	font-size:1.5rem;
@@ -118,4 +125,36 @@ nav {
 #product_image {
 	height: 100%;
 	display: ;
+}
+
+/*-------------------------------------------------------------*/
+
+#menu {
+	padding: 30px 25px;
+}
+
+/*-------------------------------------------------------------*/
+
+#order {
+	padding: 30px 25px;
+}
+	.order_title {
+	width: 100%;
+	background: rgba(51,51,51,.8);
+	color:#fff;
+	margin-bottom:4px;
+	padding:5px 11px;
+	font-size:13px;
+	}
+	.order_item {
+	width: 100%;
+	background: rgba(51,0,0,.8);
+	color:#fff;
+	margin-bottom:4px;
+	padding:14px 11px;
+	}
+	
+	.right 	{
+	float:right;
+	}
 }

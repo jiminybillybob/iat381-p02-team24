@@ -1,12 +1,36 @@
 /* grid.css; defining grids for my site*/
 
 [class*='col-']{
-	float: left;
 	padding: 0;
-	text-align: center;
+	margin: 0;
+	float:left;
+	text-align:center;
 }
 
 /* specifies width of grid*/
+
+.col-side {
+	top: 0;
+	width: 80px;
+	position:absolute;
+	padding: 50px 0;
+}
+.col-side2 {
+	top: 0;
+	width: 130px;
+	position:absolute;
+	padding: 50px 0;
+}
+.col-main {
+	max-width: 840px;
+	padding: 50px 0;
+	margin-left: 100px;
+}
+.col-main2 {
+	max-width: 760px;
+	padding: 50px 0;
+	margin-left: 150px;
+}
 .col-1of2 {
 	width: 50%;
 }
@@ -17,9 +41,8 @@
 	width: 50%;
 }
 .col-3of3 {
-	width: 35%;
+	width: 33.33%;
 }
-
 
 .grid:after {
 	content: "";
@@ -35,6 +58,20 @@
 
 /* when browser hits breakpoint of 800px width, col-1of2 reverts back to 100% width */
 @media (max-width: 900px) {
+	.col-1of2 {
+		width: 50%;
+	}
+	.col-1of3 {
+		width: 50%;
+	}
+	.col-2of3 {
+		width: 50%;
+	}
+	.col-3of3 {
+		width: 50%;
+	}
+}
+@media (max-width: 600px) {
 	.col-1of2 {
 		width: 100%;
 	}
