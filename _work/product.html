@@ -4,28 +4,40 @@
 <html lang="en">
 	<head>
     	<meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
     	<link href="css/main.css" rel="stylesheet">
-      <link href="css/grid.css" rel="stylesheet">
-		<title> Product Detail </title>
+        <link href="css/grid.css" rel="stylesheet">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="script/script.js"></script>
+		<title>Tokyo Pizza Club</title>
 	</head>
 	<body>
     
 		<nav>
         	<div class="container">
-            <img id="logo" src="images/nav_logo.png"><p id="nav_links"><a href="#">Pizzas</a><a href="#">Customize</a><a href="#">My Orders</a></p>
-          </div>
+              <img id="logo" src="images/nav_logo.png">
+              <div id="nav-links">
+                <a href="menu.html">Menu</a>
+                <a href="customize.html">Customize</a>
+                <a href="location.html">Locations</a>
+                <a href="about.html">About</a>
+                <a href="account.html">Account</a>
+              </div>
+            </div>
 		</nav>
 
-    <div class="product_detail">
-      <div class="grid">
-        <div class="col-1of2">
 
-          <img src="http://placehold.it/400x500">
+    <section>
+      <div class="grid container">
+      
+      <section>
+        <div class="col-1of2-equal">
+
+          <img src="http://placehold.it/500x500">
 
         </div> <!-- end of div col-1of2 -->
 
-        <div class="col-1of2">
+        <div class="col-1of2-equal">
+        <section>
           <h1>The Classic Tokyo</h1>
           <h2>$15.00</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula, erat sit amet vulputate porta, urna justo tempor augue, sed varius odio dui a urna. Mauris id fringilla lectus, ultrices elementum felis. Nam ultrices orci quis cursus laoreet. Curabitur blandit eleifend nulla ac dictum.</p>
@@ -35,9 +47,10 @@
             <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
             <li>Aliquam tincidunt mauris eu risus.</li>
           </ol>
-
-          <button type="submit" class="addButton" onclick="window.location.href='#'"> Add to order
-          </button>
+		</section>
+        <section>
+          <a href="product2.html"><button type="submit" class="addButton" onclick="window.location.href='#'"> Add to order
+          </button></a>
 
           <button type="submit" class="favButton" onclick="window.location.href='#'"> Add to favourite
           </button>
@@ -63,10 +76,19 @@
               </select>
             </div>
           </form>
-        
+        </section>
         </div> <!--  end of div col-2of2 -->
-
-      </div> <!-- end of div grid -->
-  </div> <!-- end of class product_detail -->
+        </section>
+        
+      </div>
+      
+    </section>
+        
+        <footer>
+            <div class="container">
+            <p>3100 West Cary Street  |  Richmond, VA 23221  |  804.355.4383</p>
+          </div>
+        </footer> 
+    <!-- end of class product_detail -->
 	</body>
 </html>

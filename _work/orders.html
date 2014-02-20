@@ -14,14 +14,22 @@
     
 		<nav>
         	<div class="container">
-            <a href="menu.html"><img id="logo" src="images/nav_logo.png"></a>
-            <p id="nav_links"><a href="menu.html">Menu</a><a href="customize.html">Customize</a><a href="locations.html">Locations</a><a href="about.html">About</a><a href="account.html">Account</a><a href="orders.html">My Order (4)</a></p>
+              <img id="logo" src="images/nav_logo.png">
+              <div id="nav-links">
+                <a href="menu.html">Menu</a>
+                <a href="customize.html">Customize</a>
+                <a href="location.html">Locations</a>
+                <a href="about.html">About</a>
+                <a href="account.html">Account</a>
+              </div>
             </div>
 		</nav>
         
-	    <div class="container">
+	    <section>
+        	
+             <div class="grid container">
 
-				<div class="col-side2">
+				<div id="orders-total">
                 
                     <div class="order_title"><h3>My Order</h3></div>
                     <div class="order_item">Item</div>
@@ -31,18 +39,34 @@
 
                 </div>    
                 
-                <section class="col-main2" id="hiroshima">
-                    <div class="thumbnail col-1of2">
-                        <div class="thumbnail_overlay"><h2>Delivery</h2></div>
-                        <img src="http://placehold.it/500x500">
+                <section class="orders-grid" id="hiroshima">
+                    <div class="thumbnail col-1of2-equal">
+                        <a href="orders2.html"><div class="thumbnail_overlay"><h2>Delivery to Home</h2></div></a>
+                        <img src="http://placehold.it/500x300">
                     </div>
-                    <div class="thumbnail col-1of2">
-                        <div class="thumbnail_overlay"><h2>Pickup</h2></div>
-                        <img src="http://placehold.it/500x500">
+                    <div class="thumbnail col-1of2-equal">
+                        <a href="orders2.html"><div class="thumbnail_overlay"><h2>Pickup</h2></div></a>
+                        <img src="http://placehold.it/500x300">
+                    </div>
+                    <div class="thumbnail col-1of2-equal">
+                        <a href="orders2.html"><div class="thumbnail_overlay"><h2>Deliver to Apartment</h2></div></a>
+                        <img src="http://placehold.it/500x300">
+                    </div>
+                    <div class="thumbnail col-1of2-equal">
+                        <a href="orders2.html"><div class="thumbnail_overlay"><h2>Deliver to Office</h2></div></a>
+                        <img src="http://placehold.it/500x300">
                     </div>
                  </section>
+                 
+               </div>
                     
-        </div>
+        </section>
+        
+        <footer>
+            <div class="container">
+            <p>3100 West Cary Street  |  Richmond, VA 23221  |  804.355.4383</p>
+          </div>
+        </footer> 
         
 	</body>
 </html>

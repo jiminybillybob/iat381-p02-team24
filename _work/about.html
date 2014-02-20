@@ -4,39 +4,48 @@
 <html lang="en">
 	<head>
     	<meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
     	<link href="css/main.css" rel="stylesheet">
-      <link href="css/grid.css" rel="stylesheet">
-		<title> IAT381 P02 Week 06: Product Details </title>
+        <link href="css/grid.css" rel="stylesheet">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="script/script.js"></script>
+		<title>Tokyo Pizza Club</title>
 	</head>
 	<body>
     
 		<nav>
         	<div class="container">
-            <img id="logo" src="images/nav_logo.png"><p id="nav_links"><a href="menu.html">Menu</a><a href="customize.html">Customize</a><a href="location.html">Location</a><a href="account.html">Account</a><a href="orders.html">My Orders</a></p>
-          </div>
+              <img id="logo" src="images/nav_logo.png">
+              <div id="nav-links">
+                <a href="menu.html">Menu</a>
+                <a href="customize.html">Customize</a>
+                <a href="location.html">Locations</a>
+                <a href="about.html">About</a>
+                <a href="account.html">Account</a>
+              </div>
+            </div>
 		</nav>
 
 
-    <div class="container">
+	<section>
+    <div class="grid container">
 
       <section>
         <img src="http://placehold.it/960x300">
       </section>
       
       <section>
-        <div class="col-1of2">
-          <img src="http://placehold.it/480x300">
-        </div> <!-- end of div col-1of2 -->
+        <div class="col-1of2-equal">
+          <img src="http://placehold.it/680x400">
+        </div> <!-- end of div col-1of2-equal -->
       
-        <div class="col-1of2">
+        <div class="col-1of2-equal">
           <div id="aboutBlurb">
           <h1>About</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula, erat sit amet vulputate porta, urna justo tempor augue, sed varius odio dui a urna. Mauris id fringilla lectus, ultrices elementum felis. Nam ultrices orci quis cursus laoreet. Curabitur blandit eleifend nulla ac dictum.</p>
           <p>Nullam placerat felis lorem, at porta lectus euismod sed. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut id euismod justo. Integer aliquam ultrices massa, ac lacinia est tempus ac. Integer ante est, fringilla nec porttitor.
           </p>
           </div> <!-- end of id aboutBlurb -->
-        </div> <!--  end of div col-1of2 -->
+        </div> <!--  end of div col-1of2-equal -->
       </section>
       
       <section>
@@ -54,14 +63,13 @@
       </section>
 
   </div> <!-- end of class container -->
+</section>
 
-      <section class="footer_section">
         <footer>
             <div class="container">
             <p>3100 West Cary Street  |  Richmond, VA 23221  |  804.355.4383</p>
           </div>
         </footer> 
-      </section>
 	
   </body>
 </html>

@@ -1,5 +1,7 @@
 html {
 	font-size: 62.5%;
+	height:100%;
+	width:100%;
 }
 
 body {
@@ -9,17 +11,7 @@ body {
 	width:100%;
 	padding: 0;
 	margin: 0;
-}
-
-section {
-	clear:both;
-}
-
-.container {
-	margin: 0 auto;
-	max-width: 960px;
-	padding: 0 25px;
-	position:relative;
+	background:#000;
 }
 
 img {
@@ -39,6 +31,7 @@ p, ul, ol {
 h1 {
 	font-size: 3.5rem;
 	text-align: left;
+	margin-top:0;
 }
 
 h2 {
@@ -47,19 +40,54 @@ h2 {
 	text-align: left;
 }
 
-.category_button {
-	opacity:.8;
-	display:block;
-	margin-bottom: 4px;
+/*-------------------------------------------------------------NAV*/
+
+nav {
+	width: 100%;
+	clear:both;
+	height:70px;
 }
-.category_button:hover {
-	opacity:1;
-}
-.thumbnail {
-	height: auto;
+
+nav .container {
+	max-width: 960px;
 	position:relative;
-	display: inline-block;
+	padding:15px 20px;
+	margin:0 auto;
 }
+
+#logo {
+	max-width:86px;
+	float:left;
+}
+#nav-links {
+	margin-top: 16px;
+	float:right;
+}
+#nav-links a{
+	font-size:1.4rem;
+	color: #fff;
+	font-weight:bold;
+	margin-left: 16px;
+}
+#nav-links a:hover{
+	color: #C33;
+}
+
+/*-------------------------------------------------------------SECTIONS*/
+
+section {
+	width: 100%;
+	clear:both;
+	background:#FFF;
+}
+
+section .container {
+	max-width: 960px;
+	position:relative;
+	padding:40px 20px;
+	margin:0 auto;
+}
+
 .thumbnail_overlay {
 	opacity:0;
 	width:100%;
@@ -69,16 +97,119 @@ h2 {
 	text-align:center;
 	background: rgba(0, 0, 0, .8);
 	padding-left: 2rem;
+	cursor:pointer;
 }
 .thumbnail_overlay:hover {
 	opacity:1;
 }
+.thumbnail_overlay_full {
+	display:none;
+	width:100%;
+	height:100%;
+	position:absolute;
+	color:#fff;
+	text-align:center;
+	background: rgba(55, 55, 55, .8);
+	z-index:10;
+}
+/*-------------------------------MENU*/
 
-/*-------------------------------------------------------------*/
+#menu-categories {
+	top: 40px;
+	width: 80px;
+	position:absolute;
+	padding-top:20px;
+	z-index:2;
+}
 
+.category_button {
+	opacity:.8;
+	display:block;
+	margin-bottom: 4px;
+}
+
+.category_button:hover {
+	opacity:1;
+}
+
+.menu-grid {
+	max-width: 940px;
+	padding: 20px 0;
+	padding-left: 100px;
+	display:inline-block;
+	position:relative;
+}
+
+/*-------------------------------ORDERS*/
+
+#orders-total {
+	top: 40px;
+	width: 130px;
+	position:absolute;
+	padding-top: 20px;
+}
+
+.orders-grid {
+	max-width: 910px;
+	padding: 20px 0;
+	padding-left: 150px;
+}
+
+.order_title {
+	width: 100%;
+	background: rgba(51,51,51,.8);
+	color:#fff;
+	margin-bottom:4px;
+	padding:5px 11px;
+	font-size:13px;
+}
+.order_item {
+	width: 100%;
+	background: rgba(51,51,51,.8);
+	color:#fff;
+	margin-bottom:4px;
+	padding:14px 11px;
+}
+	
+/*-------------------------------ABOUT*/
+
+#aboutBlurb {
+	float: left;
+}
+
+.blackNav{
+	display: inline-block;
+	background-color: black;
+	color: white;
+	padding: 1rem 1.25rem;
+	text-decoration: none;
+	width: 100%;
+}
+
+/*-------------------------------FORM*/
+
+form {
+	float:left;
+	font-size: 1.5rem;
+	text-align: left;
+}
+
+/*-------------------------------LOCATIONS*/
+
+
+
+/*-------------------------------------------------------------??????*/
 
 .quantity {
 	float: left;
+}
+.backButton {
+	background-color: black;
+	border: none;
+	width: 100px;
+	height: 40px;
+	color: white;
+	font-size: 1.5rem;
 }
 .addButton {
 	background-color: black;
@@ -118,115 +249,23 @@ h2 {
 .contButton:hover {
 	background-color: #C33;
 }
-/*-------------------------------------------------------------*/
 
-nav {
-	height:70px;
-	width:100%;
-	background: #000;
-}
 
-nav .container {
-	margin: 0 auto;
-	padding: 10px 25px;
-	max-width: 960px;
-	position:relative;
-}
-
-#logo {
-	max-width:86px;
-	float:left;
-}
-#nav_links {
-	margin-top: 16px;
-	float:right;
-}
-#nav_links a{
-	font-size:1.4rem;
-	color: #fff;
-	font-weight:bold;
-	margin-left: 16px;
-}
-#nav_links a:hover{
-	font-size:1.5rem;
-	color: #C33;
-	font-weight:bold;
-	margin-left: 18px;
-}
-
-#product_image {
-	height: 100%;
-	display: ;
-}
-
-/*-------------------------------------------------------------*/
-
-#menu {
-	padding: 30px 25px;
-}
-
-/*-------------------------------------------------------------*/
-
-#order {
-	padding: 30px 25px;
-}
-	.order_title {
-	width: 100%;
-	background: rgba(51,51,51,.8);
-	color:#fff;
-	margin-bottom:4px;
-	padding:5px 11px;
-	font-size:13px;
-	}
-	.order_item {
-	width: 100%;
-	background: rgba(51,0,0,.8);
-	color:#fff;
-	margin-bottom:4px;
-	padding:14px 11px;
-	}
-	
-	.right 	{
-	float:right;
-	}
-
-/* -----------------------Footer----------------------- */
-
-.footer_section {
-	padding-top: 40px;
-}
+/*-------------------------------------------------------------FOOTER*/
 
 footer {
 	height:70px;
 	width:100%;
+	clear:both;
 	background: #000;
 	color: white;
-	padding: 10px 0;
 	text-align: center;
 }
-
-/* -----------------------About Page----------------------- */
-#aboutBlurb {
-	float: left;
-	margin-left: 2rem;
-}
-.blackNav{
-	display: inline-block;
-	background-color: black;
-	color: white;
-	padding: 1rem 1.25rem;
-	text-decoration: none;
-	width: 100%;
+footer .container {
+	max-width: 960px;
+	position:relative;
+	padding:25px;
+	margin:0 auto;
 }
 
-/* --------------------------Form-------------------------- */
-form {
-	float:left;
-	font-size: 1.5rem;
-	text-align: left;
-}
 
-/* ------------------------location------------------------ */
-#loc1 {
-	display: inline;
-}
