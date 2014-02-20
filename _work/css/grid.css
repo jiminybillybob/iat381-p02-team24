@@ -41,14 +41,7 @@
 	width: 25%;
 }
 .col-3of3 {
-<<<<<<< Updated upstream
-	width: 33.33%;
-=======
 	width: 50%;
-}
-.col-1of5{
-	width: 20%;
->>>>>>> Stashed changes
 }
 
 .grid:after {
