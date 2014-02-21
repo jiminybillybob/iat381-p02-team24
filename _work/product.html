@@ -3,9 +3,9 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-    	<meta charset="utf-8">
-    	<link href="css/main.css" rel="stylesheet">
+    	<meta charset="utf-8">            	<link href="css/main.css" rel="stylesheet">
         <link href="css/grid.css" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet" type="text/css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="script/script.js"></script>
 		<title>Tokyo Pizza Club</title>
@@ -14,13 +14,13 @@
     
 		<nav>
         	<div class="container">
-              <img id="logo" src="images/nav_logo.png">
-              <div id="nav-links">
-                <a href="menu.html">Menu</a>
-                <a href="customize.html">Customize</a>
-                <a href="location.html">Locations</a>
-                <a href="about.html">About</a>
-                <a href="account.html">Account</a>
+              <div id="logo"><img src="images/nav_logo.png"></div>
+               <div id="nav-links">
+                <a href="menu.html"><strong>MENU</strong></a>
+                <a href="location.html">LOCATIONS</a>
+                <a href="about.html">ABOUT</a>
+                <a href="account.html">ACCOUNT</a>
+				<a href="orders.html">MY ORDER</a>
               </div>
             </div>
 		</nav>
@@ -29,34 +29,31 @@
     <section>
       <div class="grid container">
       
-      <section>
+      <div id="menu-categories">
+                <a href="#hiroshima"><img class="category_button" src="images/hiroshimaButton.png"></a>
+                <a href="#osaka"><img class="category_button" src="images/osakaButton.png"></a>
+                <a href="#monjayaki"><img class="category_button" src="images/monjayakiButton.png"></a>
+      </div>  
+      
+      
+      <article class="menu-grid">
         <div class="col-1of2-equal">
-
           <img src="http://placehold.it/500x500">
-
-        </div> <!-- end of div col-1of2 -->
-
+        </div> 
         <div class="col-1of2-equal">
         <section>
           <h1>The Classic Tokyo</h1>
           <h2>$15.00</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula, erat sit amet vulputate porta, urna justo tempor augue, sed varius odio dui a urna. Mauris id fringilla lectus, ultrices elementum felis. Nam ultrices orci quis cursus laoreet. Curabitur blandit eleifend nulla ac dictum.</p>
-
           <ol>
             <li><em>First reason why kittens are death</em></li>
             <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
             <li>Aliquam tincidunt mauris eu risus.</li>
           </ol>
-		</section>
-        <section>
-          <a href="product2.html"><button type="submit" class="addButton" onclick="window.location.href='#'"> Add to order
+
+          <a href="orders.html"><button type="submit" class="addButton" onclick="window.location.href='#'">Order
           </button></a>
-
-          <button type="submit" class="favButton" onclick="window.location.href='#'"> Add to favourite
-          </button>
-
            <form name="myform" class="quantity" action="http://www.mydomain.com/myformhandler.cgi" method="POST">
-            <div align="center">
               <select name="mydropdown">
               <option value="1">1</option>
               <option value="2">2</option>
@@ -74,9 +71,9 @@
               <option value="14">14</option>
               <option value="15">15</option>
               </select>
-            </div>
           </form>
-        </section>
+        </article>
+        
         </div> <!--  end of div col-2of2 -->
         </section>
         

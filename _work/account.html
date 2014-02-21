@@ -3,9 +3,9 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-    	<meta charset="utf-8">
-    	<link href="css/main.css" rel="stylesheet">
+    	<meta charset="utf-8">            	<link href="css/main.css" rel="stylesheet">
         <link href="css/grid.css" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet" type="text/css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="script/script.js"></script>
 		<title>Tokyo Pizza Club</title>
@@ -14,13 +14,13 @@
     
 		<nav>
         	<div class="container">
-              <img id="logo" src="images/nav_logo.png">
+              <div id="logo"><img src="images/nav_logo.png"></div>
               <div id="nav-links">
-                <a href="menu.html">Menu</a>
-                <a href="customize.html">Customize</a>
-                <a href="location.html">Locations</a>
-                <a href="about.html">About</a>
-                <a href="account.html">Account</a>
+                <a href="menu.html">MENU</a>
+                <a href="location.html">LOCATIONS</a>
+                <a href="about.html">ABOUT</a>
+                <a href="account.html">ACCOUNT</a>
+				<a href="orders.html">MY ORDER</a>
               </div>
             </div>
 		</nav>
@@ -28,37 +28,38 @@
 	<section>
     <div class="grid container">
 
-      <section>
-      	<div class="col-1of2-equal">
+	<article>
+    
+     	<div class="col-1of3-equal">
         <h1>Login</h1>
-        <form name="addressForm">
+        <form name="loginForm">
             Username: <input type="text" name="username"><br>
             Password: <input type="text" name="pass"><br>
-          </form> <!-- end of address form -->
-          </div>
-      </section>
-
-      <section>
+          </form>
         <button type="submit" class="contButton" onclick="window.location.href='#'"> Continue
         </button>
-        <hr>
-      </section>
+      </div>
 
+<div class="col-2of3-equal">
+
+        <h1>Or Sign up</h1>
+      <div class="col-1of2-equal">
       <section>
-        <h1>Sign up</h1>
-      </section>
-      
-      <section>
-        <div class="col-1of2-equal">
           <h2>Address</h2>
           <form name="addressForm">
-            First name: <input type="text" name="street"><br>
-            Last name: <input type="text" name="street"><br>
-            Telephone: <input type="text" name="street"><br>
-            Street: <input type="text" name="street"><br>
-            City: <input type="text" name="city"><br>
-            Zip code: <input type="text" name="firstname">
-            <div align="left">Province
+            First name:
+			<input type="text" name="first"><br>
+            Last name:
+            <input type="text" name="last"><br>
+            Telephone:
+            <input type="text" name="phone"><br>
+            Street:
+            <input type="text" name="street"><br>
+            City:<br>
+            <input type="text" name="city"><br>
+            Zip code:
+            <input type="text" name="zip"><br>
+            Province
                 <select name="mydropdown">
                   <option value="—">—</option>
                   <option value="AB">AB</option>
@@ -71,36 +72,38 @@
                   <option value="QC">QC</option>
                   <option value="SK">SK</option>
               </select>
-              </div>
           </form> <!-- end of address form -->
-        </div> <!-- end of class col-1of2-equal -->
-
-          <div class="col-1of2-equal">
+        </section> <!-- end of class col-1of2-equal -->
+		</div>
+        
+        <div class="col-1of2-equal">
+		<section>
             <h2>Payment</h2>
             <form name="paymentForm">        
-            Name: <input type="text" name="firstname"><br>
-            <div align="left"> Card type:
+            <p>Card type:
               <select name="mydropdown">
                 <option value="—">—</option>
                 <option value="Visa">Visa</option>
                 <option value="MasterCard">MasterCard</option>
-              </select>
-            </div>
-            Card number: <input type="text" name="cardnum"><br>
-            Security number: <input type="text" name="securitynum"><br>
-            Expiry date (mm/yy): <input type="text" name="month"><input type="text" name="year"><br>
-
-            
-
-            
+              </select></p>
+            <p>Card number:<br>
+			<input type="text" name="cardnum"></p>
+            <p>Security number:</p>
+			<input type="text" name="securitynum"></p>
+            <p>Expiry date (mm/yy):</p>
+			<input type="text" name="month"></p>
             </form> <!--  end of payment form -->
-          </div> <!--  end of div col-1of2-equal -->
+           <!--  end of div col-1of2-equal -->
       </section>    
-
       <section>
-        <button type="submit" class="contButton" onclick="window.location.href='#'"> Save
+        <button type="submit" class="contButton" onclick="window.location.href='#'">Save
         </button>
       </section>
+      </div>
+
+</div>
+
+</article>
       
     </div> <!-- end of class container -->
 </section>

@@ -3,9 +3,9 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-    	<meta charset="utf-8">
-    	<link href="css/main.css" rel="stylesheet">
+    	<meta charset="utf-8">            	<link href="css/main.css" rel="stylesheet">
         <link href="css/grid.css" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet" type="text/css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="script/script.js"></script>
 		<title>Tokyo Pizza Club</title>
@@ -14,13 +14,13 @@
     
 		<nav>
         	<div class="container">
-              <img id="logo" src="images/nav_logo.png">
+              <div id="logo"><img src="images/nav_logo.png"></div>              
               <div id="nav-links">
-                <a href="menu.html">Menu</a>
-                <a href="customize.html">Customize</a>
-                <a href="location.html">Locations</a>
-                <a href="about.html">About</a>
-                <a href="account.html">Account</a>
+                <a href="menu.html">MENU</a>
+                <a href="location.html">LOCATIONS</a>
+                <a href="about.html">ABOUT</a>
+                <a href="account.html">ACCOUNT</a>
+				<a href="orders.html"><strong>MY ORDER</strong></a>
               </div>
             </div>
 		</nav>
@@ -29,17 +29,17 @@
         	
              <div class="grid container">
 
-				<div id="orders-total">
+				<div class="col-2of3">
                 
-                    <div class="order_title"><h3>My Order</h3></div>
-                    <div class="order_item">Item</div>
-                    <div class="order_item">Item x2</div>
-                    <div class="order_item">Item</div>
-                    <div class="order_title"><h3>Total ##</h3></div>
+                   <h1>My Order</h1>
+                   <p>Tokyo Classic X1</p>
+                   <p>Small Drink x1</p>
+                   <p>Wings x1</p>
+                   <h2>Total: $14.67</h2>
 
                 </div>    
                 
-                <section class="orders-grid" id="hiroshima">
+                <div class="col-1of2">
                     <div class="thumbnail col-1of2-equal">
                         <a href="orders2.html"><div class="thumbnail_overlay"><h2>Delivery to Home</h2></div></a>
                         <img src="http://placehold.it/500x300">
@@ -56,7 +56,7 @@
                         <a href="orders2.html"><div class="thumbnail_overlay"><h2>Deliver to Office</h2></div></a>
                         <img src="http://placehold.it/500x300">
                     </div>
-                 </section>
+                 </div>
                  
                </div>
                     

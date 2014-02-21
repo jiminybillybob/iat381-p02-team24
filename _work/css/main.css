@@ -5,7 +5,8 @@ html {
 }
 
 body {
-	font-family: Arial, Verdana, sans-serif;
+	font-family: Oswald, Arial, Verdana, sans-serif;
+	font-weight:300;
 	color: black;
 	height:100%;
 	width:100%;
@@ -26,6 +27,7 @@ p, ul, ol {
 	font-size: 1.5rem;
 	text-align: left;
 	clear: both;
+	margin-top:0;
 }
 
 h1 {
@@ -38,6 +40,15 @@ h2 {
 	font-weight: normal;
 	font-size: 2.5rem; 
 	text-align: left;
+	margin-top:0;
+}
+
+article {
+	clear:both;
+	width:100%;
+}
+input {
+	margin: 8px 0;
 }
 
 /*-------------------------------------------------------------NAV*/
@@ -45,29 +56,35 @@ h2 {
 nav {
 	width: 100%;
 	clear:both;
-	height:70px;
+	height:75px;
+	background:#fff;
 }
 
 nav .container {
 	max-width: 960px;
 	position:relative;
-	padding:15px 20px;
+	padding:0px 20px;
 	margin:0 auto;
 }
 
 #logo {
-	max-width:86px;
+	max-width:125px;
+	height:75px;
 	float:left;
+	padding:11px 14px;
+	background:#000;
 }
 #nav-links {
-	margin-top: 16px;
+	height:48px;
 	float:right;
+	padding: 15px 20px;
+	background:#000;
 }
 #nav-links a{
-	font-size:1.4rem;
+	font-size:1.3rem;
+	font-weight:500;
 	color: #fff;
-	font-weight:bold;
-	margin-left: 16px;
+	margin: 0px 8px;
 }
 #nav-links a:hover{
 	color: #C33;
@@ -123,13 +140,13 @@ section .container {
 }
 
 .category_button {
-	opacity:.8;
+	opacity:1;
 	display:block;
 	margin-bottom: 4px;
 }
 
 .category_button:hover {
-	opacity:1;
+	opacity:.8;
 }
 
 .menu-grid {
@@ -142,49 +159,10 @@ section .container {
 
 /*-------------------------------ORDERS*/
 
-#orders-total {
-	top: 40px;
-	width: 130px;
-	position:absolute;
-	padding-top: 20px;
-}
-
-.orders-grid {
-	max-width: 910px;
-	padding: 20px 0;
-	padding-left: 150px;
-}
-
-.order_title {
-	width: 100%;
-	background: rgba(51,51,51,.8);
-	color:#fff;
-	margin-bottom:4px;
-	padding:5px 11px;
-	font-size:13px;
-}
-.order_item {
-	width: 100%;
-	background: rgba(51,51,51,.8);
-	color:#fff;
-	margin-bottom:4px;
-	padding:14px 11px;
-}
 	
 /*-------------------------------ABOUT*/
 
-#aboutBlurb {
-	float: left;
-}
 
-.blackNav{
-	display: inline-block;
-	background-color: black;
-	color: white;
-	padding: 1rem 1.25rem;
-	text-decoration: none;
-	width: 100%;
-}
 
 /*-------------------------------FORM*/
 
@@ -193,13 +171,6 @@ form {
 	font-size: 1.5rem;
 	text-align: left;
 }
-
-/*-------------------------------LOCATIONS*/
-
-
-
-/*-------------------------------------------------------------??????*/
-
 .quantity {
 	float: left;
 }
@@ -243,12 +214,15 @@ form {
 	height: 40px;
 	color: white;
 	font-size: 1.5rem;
-	float: right;
-	margin-left: 20;
+	float: left;
+	margin: 20px 0;
 }
 .contButton:hover {
 	background-color: #C33;
 }
+
+/*-------------------------------LOCATIONS*/
+
 
 
 /*-------------------------------------------------------------FOOTER*/

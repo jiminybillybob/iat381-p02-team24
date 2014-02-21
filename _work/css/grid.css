@@ -1,8 +1,8 @@
 /* grid.css; defining grids for my site*/
 
 [class*='col-']{
-	padding: 0;
-	margin: 0;
+	padding-right: 20px;
+	margin-bottom: 10px;
 	float:left;
 	text-align:center;
 	position:relative;
@@ -10,6 +10,14 @@
 
 /* specifies width of grid*/
 
+.col-img{
+	padding:0;
+	margin:0;
+}
+
+.col-1of1 {
+	width: 100%;
+}
 .col-1of2 {
 	width: 75%;
 }
@@ -27,6 +35,12 @@
 }
 .col-1of3-equal {
 	width: 33.33%;
+}
+.col-2of3-equal {
+	width: 66.66%;
+}
+.col-1of4 {
+	width: 25%;
 }
 .grid:after {
 	content: "";
