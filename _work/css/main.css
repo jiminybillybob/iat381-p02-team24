@@ -25,6 +25,7 @@ body {
     font-weight: normal;
     font-style: normal;
 
+	background:#000 ;
 }
 
 img {
@@ -64,6 +65,7 @@ h3 {
 article {
 	clear:both;
 	width:100%;
+	background: rgba(255,255,255, 0.7);
 }
 
 button {
@@ -145,7 +147,14 @@ nav .container {
 section {
 	width: 100%;
 	clear:both;
+<<<<<<< Updated upstream
 	background:#fff;
+=======
+}
+
+.background {
+	background:#FFF url(../images/websiteBG.jpg) repeat;
+>>>>>>> Stashed changes
 }
 
 section .container {
