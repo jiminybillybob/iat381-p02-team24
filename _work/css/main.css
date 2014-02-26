@@ -179,10 +179,6 @@ section .container {
 	margin-bottom:0;
 	padding:25%;
 }
-.thumbnail_overlay h3 {
-	font-size: 2.4rem;
-	margin:0;
-}
 .thumbnail_overlay:hover {
 	opacity: 1;
 }
