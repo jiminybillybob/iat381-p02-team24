@@ -11,8 +11,8 @@
 /* specifies width of grid*/
 
 .col-img{
-	padding:0;
-	margin:0;
+	padding:1px 3px;
+	margin:0px;
 }
 
 .col-1of1 {
@@ -36,6 +36,10 @@
 .col-1of3-equal {
 	width: 33.33%;
 }
+.col-login {
+	width: 28%;
+	margin-right:5.33%;
+}
 .col-2of3-equal {
 	width: 66.66%;
 }
@@ -55,7 +59,10 @@
 }
 
 /* when browser hits breakpoint of 800px width, col-1of2-equal reverts back to 100% width */
-@media (max-width: 536px) {
+@media (max-width: 780px) {
+	.col-1of1 {
+		width: 50%;
+	}
 	.col-1of2 {
 		width: 50%;
 	}
@@ -71,13 +78,27 @@
 	.col-3of3 {
 		width: 50%;
 	}
+	.col-login {
+		width: 50%;
+		margin-right:0;
+	}
 	.col-1of3-equal {
+	width: 50%;
+	}
+	.col-1of4 {
 	width: 50%;
 	}
 }
 @media (max-width: 600px) {
+	.col-1of1 {
+		width: 100%;
+	}
 	.col-1of2 {
 		width: 100%;
+	}
+	.col-login {
+		width: 80%;
+		margin-right:0;
 	}
 	.col-1of2-equal {
 		width: 100%;
@@ -94,4 +115,7 @@
 	.col-1of3-equal {
 		width: 100%;
 	}	
+	.col-1of4 {
+	width: 100%;
+	}
 }

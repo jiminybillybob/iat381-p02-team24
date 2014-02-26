@@ -12,7 +12,19 @@ body {
 	width:100%;
 	padding: 0;
 	margin: 0;
-	background:#000;
+	background: #000;
+}
+
+@font-face {
+    font-family: 'morning';
+    src: url('morning_star-webfont.eot');
+    src: url('morning_star-webfont.eot?#iefix') format('embedded-opentype'),
+         url('morning_star-webfont.woff') format('woff'),
+         url('morning_star-webfont.ttf') format('truetype'),
+         url('morning_star-webfont.svg#morning_starregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 img {
@@ -31,9 +43,10 @@ p, ul, ol {
 }
 
 h1 {
-	font-size: 3.5rem;
+	font-size: 3.2rem;
 	text-align: left;
 	margin-top:0;
+	margin-bottom:8px;
 }
 
 h2 {
@@ -42,13 +55,19 @@ h2 {
 	text-align: left;
 	margin-top:0;
 }
-
+h3 {
+	font-weight: normal;
+	font-size: 2.1rem; 
+	text-align: left;
+	margin-top:0;
+}
 article {
 	clear:both;
 	width:100%;
 }
-input {
-	margin: 8px 0;
+
+button {
+	cursor:pointer;
 }
 
 /*-------------------------------------------------------------NAV*/
@@ -56,38 +75,69 @@ input {
 nav {
 	width: 100%;
 	clear:both;
-	height:75px;
-	background:#fff;
+	min-height:68px;
 }
-
+@media (max-width: 700px) {
+	nav {
+	background:#000;
+	text-align:center;
+	min-height:110px;
+}
+}
 nav .container {
-	max-width: 960px;
+	max-width: 980px;
 	position:relative;
 	padding:0px 20px;
-	margin:0 auto;
+	margin:0 auto;	
+}
+#logo {
+	max-width:100px;
+	height:46px;
+	float:left;
+	padding:6px 0px;
+}
+@media (max-width: 700px) {
+	#logo {
+		display:inline-block;
+	float:none;
+}
 }
 
-#logo {
-	max-width:125px;
-	height:75px;
-	float:left;
-	padding:11px 14px;
-	background:#000;
-}
 #nav-links {
 	height:48px;
 	float:right;
-	padding: 15px 20px;
+}
+@media (max-width: 700px) {
+	#nav-links {
+	float:none;
+	width:100%;
+	display:inline-block;
+	text-align:center;
+}
+}
+.nav-button {
+	float:left;
 	background:#000;
-}
-#nav-links a{
-	font-size:1.3rem;
-	font-weight:500;
+	font-size:1.4rem;
+	background: #000;
 	color: #fff;
-	margin: 0px 8px;
+	margin-left:2px;
+	margin-top:3px;
+	padding: 20px 13px;
 }
-#nav-links a:hover{
-	color: #C33;
+@media (max-width: 700px) {
+.nav-button {
+	font-size:1.3rem;
+	display:inline-block;
+	float:none;
+	padding: 8px 4px;
+}
+}
+.nav-button:hover {
+	background:#C33;
+}
+.selected {
+	background:#C33;
 }
 
 /*-------------------------------------------------------------SECTIONS*/
@@ -95,11 +145,11 @@ nav .container {
 section {
 	width: 100%;
 	clear:both;
-	background:#FFF;
+	background:#fff;
 }
 
 section .container {
-	max-width: 960px;
+	max-width: 980px;
 	position:relative;
 	padding:40px 20px;
 	margin:0 auto;
@@ -110,29 +160,42 @@ section .container {
 	width:100%;
 	height:100%;
 	position:absolute;
-	color:#fff;
-	text-align:center;
-	background: rgba(0, 0, 0, .8);
-	padding-left: 2rem;
+	color:#000;
+	background: rgba(255, 255, 255, .5);
 	cursor:pointer;
+	padding:19px;
+}
+.thumbnail_overlay h2 {
+	font-size: 3.6rem;
+	margin-bottom:0;
+	padding:25%;
+}
+.thumbnail_overlay h3 {
+	font-size: 2.4rem;
+	margin:0;
 }
 .thumbnail_overlay:hover {
-	opacity:1;
+	opacity: 1;
 }
-.thumbnail_overlay_full {
-	display:none;
-	width:100%;
-	height:100%;
-	position:absolute;
-	color:#fff;
-	text-align:center;
-	background: rgba(55, 55, 55, .8);
-	z-index:10;
+
+
+/*-------------------------------HOME*/
+
+#banner {
+	background:url(../images/banner.jpg)  center no-repeat;
+	background-size:cover;
+	height:480px;
+	margin-top:0px;
 }
+#news {
+	padding-top:20px;
+}
+
+
 /*-------------------------------MENU*/
 
 #menu-categories {
-	top: 40px;
+	top: 98px;
 	width: 80px;
 	position:absolute;
 	padding-top:20px;
@@ -150,9 +213,9 @@ section .container {
 }
 
 .menu-grid {
-	max-width: 940px;
+	max-width: 945px;
 	padding: 20px 0;
-	padding-left: 100px;
+	padding-left: 95px;
 	display:inline-block;
 	position:relative;
 }
@@ -164,61 +227,58 @@ section .container {
 
 
 
-/*-------------------------------FORM*/
+/*-------------------------------ACCOUNT*/
 
 form {
-	float:left;
+	display:block;
+	width:100%;
 	font-size: 1.5rem;
 	text-align: left;
 }
+.login {
+	background: #000;
+	color:#fff;
+	padding: 17px;
+}
+.login-button {
+	background: #fff;
+	border: none;
+	width: 100px;
+	height: 40px;
+	color: black;
+	font-size: 1.5rem;
+	display:block;
+	margin: 20px 0;
+	float:left;
+}
+form p{
+	width:100%;
+}
+.input_label {
+	
+}
+input {
+	width:75%;
+	display:block;
+}
 .quantity {
 	float: left;
+	margin: 20px;
 }
-.backButton {
-	background-color: black;
-	border: none;
-	width: 100px;
-	height: 40px;
-	color: white;
-	font-size: 1.5rem;
-}
-.addButton {
-	background-color: black;
-	border: none;
-	width: 100px;
-	height: 40px;
-	color: white;
-	font-size: 1.5rem;
-	float: right;
-}
-.addButton:hover {
-	background-color: #C33;
-}
-.favButton {
-	background-color: black;
-	border: none;
-	width: 100px;
-	height: 40px;
-	color: white;
-	font-size: 1.5rem;
-	float: right;
-	margin-left: 20;
-}
-.favButton:hover {
-	background-color: #C33;
-}
+
 .contButton {
-	background-color: black;
+	background: #000;
 	border: none;
 	width: 100px;
 	height: 40px;
 	color: white;
 	font-size: 1.5rem;
-	float: left;
+	display:block;
 	margin: 20px 0;
+	float:left;
 }
 .contButton:hover {
-	background-color: #C33;
+	background: #C33;
 }
 
 /*-------------------------------LOCATIONS*/
@@ -236,7 +296,7 @@ footer {
 	text-align: center;
 }
 footer .container {
-	max-width: 960px;
+	max-width: 980px;
 	position:relative;
 	padding:25px;
 	margin:0 auto;

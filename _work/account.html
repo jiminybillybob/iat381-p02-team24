@@ -5,7 +5,6 @@
 	<head>
     	<meta charset="utf-8">            	<link href="css/main.css" rel="stylesheet">
         <link href="css/grid.css" rel="stylesheet">
-<link href="//fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet" type="text/css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="script/script.js"></script>
 		<title>Tokyo Pizza Club</title>
@@ -14,13 +13,13 @@
     
 		<nav>
         	<div class="container">
-              <div id="logo"><img src="images/nav_logo.png"></div>
+              <A href="index.html"><div id="logo"><img src="images/nav_logo.png"></div></a>
               <div id="nav-links">
-                <a href="menu.html">MENU</a>
-                <a href="location.html">LOCATIONS</a>
-                <a href="about.html">ABOUT</a>
-                <a href="account.html">ACCOUNT</a>
-				<a href="orders.html">MY ORDER</a>
+                <a href="menu.html"><div class="nav-button">MENU</div></a>
+                <a href="location.html"><div class="nav-button">LOCATIONS</div></a>
+                <a href="about.html"><div class="nav-button">ABOUT</div></a>
+                <a href="account.html"><div class="nav-button selected">ACCOUNT</div></a>
+				<a href="orders.html"><div class="nav-button">MY ORDER</div></a>
               </div>
             </div>
 		</nav>
@@ -30,13 +29,15 @@
 
 	<article>
     
-     	<div class="col-1of3-equal">
+     	<div class="col-login login">
         <h1>Login</h1>
         <form name="loginForm">
-            Username: <input type="text" name="username"><br>
-            Password: <input type="text" name="pass"><br>
+            <p>Username: 
+<input type="text" name="username"></p>
+            <p>Password: 
+<input type="text" name="pass"></p>
           </form>
-        <button type="submit" class="contButton" onclick="window.location.href='#'"> Continue
+        <button type="submit" class="login-button" onclick="window.location.href='#'"> Continue
         </button>
       </div>
 
@@ -45,14 +46,13 @@
         <h1>Or Sign up</h1>
       <div class="col-1of2-equal">
       <section>
-          <h2>Address</h2>
           <form name="addressForm">
             First name:
 			<input type="text" name="first"><br>
             Last name:
             <input type="text" name="last"><br>
             Telephone:
-            <input type="text" name="phone"><br>
+            <input type="text" name="phone" placeholder=""><br>
             Street:
             <input type="text" name="street"><br>
             City:<br>
@@ -78,7 +78,6 @@
         
         <div class="col-1of2-equal">
 		<section>
-            <h2>Payment</h2>
             <form name="paymentForm">        
             <p>Card type:
               <select name="mydropdown">
@@ -90,8 +89,8 @@
 			<input type="text" name="cardnum"></p>
             <p>Security number:</p>
 			<input type="text" name="securitynum"></p>
-            <p>Expiry date (mm/yy):</p>
-			<input type="text" name="month"></p>
+            <p>Expiry date:</p>
+			<input type="text" name="month" placeholder="(mm/yy)"></p>
             </form> <!--  end of payment form -->
            <!--  end of div col-1of2-equal -->
       </section>    
