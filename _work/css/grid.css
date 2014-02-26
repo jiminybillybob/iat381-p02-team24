@@ -1,17 +1,18 @@
 /* grid.css; defining grids for my site*/
 
 [class*='col-']{
-	padding-right: 20px;
+	padding: 20px;
 	margin-bottom: 10px;
 	float:left;
 	text-align:center;
 	position:relative;
+	background: rgba(255,255,255,1);
 }
 
 /* specifies width of grid*/
 
 .col-img{
-	padding:1px 3px;
+	padding:10px 8px;
 	margin:0px;
 }
 
@@ -37,8 +38,9 @@
 	width: 33.33%;
 }
 .col-login {
-	width: 28%;
-	margin-right:5.33%;
+	background:#000;
+	width: 30%;
+	margin-right:3.33%;
 }
 .col-2of3-equal {
 	width: 66.66%;
