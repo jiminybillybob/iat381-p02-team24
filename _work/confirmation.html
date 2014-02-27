@@ -28,42 +28,43 @@
 
 <article>
 <div class="col-1of1">
-<h1>My Order</h1>
+<h1>Confirmation</h1>
 </div>
 </article>
 
 <article>
 <div class="col-1of1">
-<p><button type="submit" class="smallButton" onclick="window.location.href='#'">X</button>Shibuya Special (1)<span class="price">$11.40</span></p>
+<p>Shibuya Special <span class="price">$11.40</span></p>
 <hr>
-<p><button type="submit" class="smallButton" onclick="window.location.href='#'">X</button>Toshima Classic (1)<span class="price">$9.25</span></p>
+<p>Toshima Classic <span class="price">$9.25</span></p>
 <hr>
-<p><button type="submit" class="smallButton" onclick="window.location.href='#'">X</button>Kito Combo (1)<span class="price">$12.55</span></p>
+<p>Kito Combo <span class="price">$12.55</span></p>
 <hr>
-<p><button type="submit" class="smallButton" onclick="window.location.href='#'">X</button>Japa Pizza (1)<span class="price">$14.40</span></p>
+<p>Japa Pizza <span class="price">$14.40</span></p>
 <hr>
 <h2 class="price">Total: $47.60</h2>
 </div>    
-<div class="col-1of1">
-<button type="submit" class="rightButton Button" onclick="window.location.href='confirmation.html'">Order as Guest</button>
-<button type="submit" class="rightButton Button" onclick="window.location.href='account.html'">Login to Order</button>
-
-</div>
 </article>
 
-<article>
-<div class="thumbnail col-1of4">
-<img src="images/s1b.jpg">
-</div>
-<div class="thumbnail col-1of4">
-<img src="images/t1b.jpg">
-</div>
-<div class="thumbnail col-1of4">
-<img src="images/k1b.jpg">
-</div>
-<div class="thumbnail col-1of4">
-<img src="images/k4b.jpg">
-</div>
+<article> <!-- payment form -->
+	<div class="col-1of2-equal">
+	<h2>Payment</h2>
+	    <form name="addressForm">
+	        Name: <input type="text" name="fullname"><br>
+	        Card number: <input type="text" name="phone" placeholder=""><br>
+	        Expiration date <input type="text" name="street"><br>
+	        Security number <input type="text" name="city"><br>
+	    </form> <!-- end of address form -->
+	</div>
+	
+	<div class="col-1of2-equal">
+	<h2>Delivery address</h2>
+	    <form name="addressForm">
+	        Address <input type="text" name="address"><br>
+	        Telephone <input type="text" name="telephone"><br>
+	    </form> <!-- end of address form -->
+	    <button type="submit" class="rightButton Button" onclick="window.location.href='#'">Confirm Payment</button>
+	</div>
 </article>
 
 </div></section>
