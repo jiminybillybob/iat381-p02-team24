@@ -24,88 +24,74 @@
             </div>
 		</nav>
 
-	<section class="background">
-    <div class="grid container">
-
-	<article>
+<section><div class="grid container">
     
-     	<div class="col-login login">
-        <h1>Login</h1>
-        <form name="loginForm">
-            <p>Username: 
-<input type="text" name="username"></p>
-            <p>Password: 
-<input type="text" name="pass"></p>
-          </form>
-        <button type="submit" class="login-button" onclick="window.location.href='#'"> Continue
-        </button>
-      </div>
-
-<div class="col-2of3-equal">
-
-        <h1>Or Sign up</h1>
-      <div class="col-1of2-equal">
-      <section>
-          <form name="addressForm">
-            First name:
-			<input type="text" name="first"><br>
-            Last name:
-            <input type="text" name="last"><br>
-            Telephone:
-            <input type="text" name="phone" placeholder=""><br>
-            Street:
-            <input type="text" name="street"><br>
-            City:<br>
-            <input type="text" name="city"><br>
-            Zip code:
-            <input type="text" name="zip"><br>
-            Province
-                <select name="mydropdown">
-                  <option value="—">—</option>
-                  <option value="AB">AB</option>
-                  <option value="BC">BC</option>
-                  <option value="MB">MB</option>
-                  <option value="NB">NB</option>
-                  <option value="NL">NL</option>
-                  <option value="ON">ON</option>
-                  <option value="PE">PE</option>
-                  <option value="QC">QC</option>
-                  <option value="SK">SK</option>
-              </select>
-          </form> <!-- end of address form -->
-        </section> <!-- end of class col-1of2-equal -->
-		</div>
-        
+    <article>
+    	<div class="col-1of1"> 
+        	<h1>Login</h1>
+        </div>
+        <div class="col-1of2-equal"> 
+            <form name="loginForm">
+                <p>Username: <input type="text" name="username"></p>
+                <p>Password: <input type="text" name="pass"></p>
+            </form>
+            <button type="submit" class="leftButton Button" onclick="window.location.href='#'">Continue</button>
+        </div>
+    </article>
+    
+    <article>
+    	<div class="col-1of1"> 
+        	<h1>Or Sign up</h1>
+        </div>
         <div class="col-1of2-equal">
-		<section>
-            <form name="paymentForm">        
-            <p>Card type:
-              <select name="mydropdown">
-                <option value="—">—</option>
-                <option value="Visa">Visa</option>
-                <option value="MasterCard">MasterCard</option>
-              </select></p>
-            <p>Card number:<br>
-			<input type="text" name="cardnum"></p>
-            <p>Security number:</p>
-			<input type="text" name="securitynum"></p>
-            <p>Expiry date:</p>
-			<input type="text" name="month" placeholder="(mm/yy)"></p>
-            </form> <!--  end of payment form -->
-           <!--  end of div col-1of2-equal -->
-      </section>    
-      <section>
-        <button type="submit" class="contButton" onclick="window.location.href='#'">Save
-        </button>
-      </section>
-      </div>
-
-</div>
-
-</article>
-      
-    </div> <!-- end of class container -->
-</section>
+            <form name="addressForm">
+                First name: <input type="text" name="first"><br>
+                Last name: <input type="text" name="last"><br>
+                Telephone: <input type="text" name="phone" placeholder=""><br>
+                Street: <input type="text" name="street"><br>
+                City: <input type="text" name="city"><br>
+                Zip code:<input type="text" name="zip"><br>
+                Province
+                <select name="mydropdown">
+                    <option value="—">—</option>
+                    <option value="AB">AB</option>
+                    <option value="BC">BC</option>
+                    <option value="MB">MB</option>
+                    <option value="NB">NB</option>
+                    <option value="NL">NL</option>
+                    <option value="ON">ON</option>
+                    <option value="PE">PE</option>
+                    <option value="QC">QC</option>
+                    <option value="SK">SK</option>
+                </select>
+            </form> <!-- end of address form -->
+        </div>  
+        <div class="col-1of2-equal">
+            <form name="paymentForm">
+                <p>
+                    Card type:
+                    <select name="mydropdown">
+                    <option value="—">—</option>
+                    <option value="Visa">Visa</option>
+                    <option value="MasterCard">MasterCard</option>
+                    </select>
+                </p>
+                <p>
+                Card number: <input type="text" name="cardnum">
+                </p>
+                <p>Security number:</p>
+                <input type="text" name="securitynum"></p>
+                <p>Expiry date:</p>
+                <input type="text" name="month" placeholder="(mm/yy)"></p>
+                </form> 
+                <section>
+                <button type="submit" class="leftButton Button" onclick="window.location.href='#'">Save
+                </button>
+                </section>  
+        </div>
+    </article>
+    
+</div></section>
 
         <footer>
             <div class="container">

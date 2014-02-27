@@ -19,23 +19,13 @@
 		// MODIFIED CODE FOUND AT http://stackoverflow.com/questions/17390989/how-to-fix-a-div-after-scrolling-a-bit-with-jquery
 		// SETS THE SIDE NAV BAR TO FIXED AFTER SCROLLING A BIT
 		$(window).scroll(function(){
- 		   if ($(window).scrollTop() > 108){
+ 		   if ($(window).scrollTop() > 98){
 			  $("#menu-categories").css({ position: "fixed" });
-			  $("#menu-categories").css({ top: "58px" });
-			  $("#orders-total").css({ position: "fixed" });
-			  $("#orders-total").css({ top: "58px" });
+			  $("#menu-categories").css({ top: "0px" });
   			}
 			else {
       		  $("#menu-categories").css({ position: "absolute" });
-			  $("#menu-categories").css({ top: "98px" });
-			  $("#orders-total").css({ position: "absolute" });
-			  $("#orders-total").css({ top: "98px" });
+			  $("#menu-categories").css({ top: "30px" });
   			}
 		});
 		
-		// POPS UP ITEM DESCRIPTION AFTER CLICKING THUMBNAIL
-		$(document).ready(function() {
-			$('.thumbnail_overlay').click(function(){ 
-			$('.thumbnail_overlay_full').fadeIn(300);
-		}); 
-		});

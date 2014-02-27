@@ -12,7 +12,7 @@ body {
 	width:100%;
 	padding: 0;
 	margin: 0;
-	background: #fff;
+	background:#FFF url(../images/websiteBG.jpg) repeat;
 }
 
 @font-face {
@@ -40,32 +40,50 @@ p, ul, ol {
 	font-size: 1.5rem;
 	text-align: left;
 	clear: both;
-	margin-top:0;
+	margin:8px 0;
+}
+
+hr {
+	display:block;
+	
+	height: 1px;
+	background:#000;
+	border:0px;
+	margin:17px 0;
 }
 
 h1 {
 	font-size: 3.2rem;
 	text-align: left;
-	margin-top:0;
-	margin-bottom:8px;
+	margin:0;
 }
 
 h2 {
 	font-weight: normal;
 	font-size: 2.5rem; 
 	text-align: left;
-	margin-top:0;
+	margin:0;
 }
 h3 {
 	font-weight: normal;
 	font-size: 2.1rem; 
 	text-align: left;
-	margin-top:0;
+	margin:0;
 }
+
+section {
+	width: 100%;
+	clear:both;
+	margin-bottom:20px;
+}
+
 article {
 	clear:both;
+	display:inline-block;
 	width:100%;
-	background: rgba(255,255,255, 0);
+	background: rgba(255,255,255, 1);
+	padding:10px;
+	margin-bottom:10px;
 }
 
 button {
@@ -145,85 +163,46 @@ nav .container {
 
 /*-------------------------------------------------------------SECTIONS*/
 
-section {
-	width: 100%;
-	clear:both;
-}
-
-.background {
-	background:#FFF url(../images/websiteBG.jpg) repeat;
-}
-
 section .container {
 	max-width: 980px;
 	position:relative;
-	padding:40px 20px;
+	padding:30px 20px;
 	margin:0 auto;
 }
 
-.thumbnail_overlay {
-	opacity:0;
-	width:100%;
-	height:100%;
-	position:absolute;
-	color:#000;
-	background: rgba(255, 255, 255, .5);
-	cursor:pointer;
-	padding:19px;
-}
-.thumbnail_overlay h2 {
-	font-size: 3.6rem;
-	margin-bottom:0;
-	padding:25%;
-}
-.thumbnail_overlay:hover {
-	opacity: 1;
-}
-
-
 /*-------------------------------HOME*/
-
-#banner {
-	background:url(../images/banner.jpg)  center no-repeat;
-	background-size:cover;
-	height:480px;
-	margin-top:0px;
-}
-#news {
-	padding-top:20px;
-}
 
 
 /*-------------------------------MENU*/
 
 #menu-categories {
-	top: 98px;
-	width: 80px;
+	top: 30px;
+	padding-top:102px;
+	width: 82px;
+	margin-left:-95px;
 	position:absolute;
-	padding-top:20px;
 	z-index:2;
 }
 
 .category_button {
 	opacity:1;
 	display:block;
-	margin-bottom: 4px;
+	margin-bottom: 8px;
 }
 
 .category_button:hover {
 	opacity:.8;
 }
-
-.menu-grid {
-	max-width: 945px;
-	padding: 20px 0;
-	padding-left: 95px;
-	display:inline-block;
-	position:relative;
+@media (max-width: 1200px) {
+#menu-categories {
+	display:none;
 }
-
+}
 /*-------------------------------ORDERS*/
 
+.price {
+	float:right;
+}
 	
 /*-------------------------------ABOUT*/
 
@@ -236,21 +215,36 @@ form {
 	width:100%;
 	font-size: 1.5rem;
 	text-align: left;
+	margin: 8px 0;
 }
-.login {
-	color:#fff;
-	padding: 17px;
-}
-.login-button {
-	background: #fff;
+.Button {
+	background: #000;
 	border: none;
-	width: 100px;
-	height: 40px;
-	color: black;
+	color: white;
+	border: none;
 	font-size: 1.5rem;
-	display:block;
-	margin: 20px 0;
 	float:left;
+	padding:10px 20px;
+	margin: 10px 0;
+}
+.Button:hover {
+	background: #C33;
+}
+.leftButton {
+	float:left;
+}
+.rightButton {
+	float:right;
+}
+.smallButton {
+	background: #000;
+	color:#fff;
+	border: none;
+	margin-left:10px;
+	float:right;
+}
+.smallButton:hover {
+	background:#C33;
 }
 form p{
 	width:100%;
@@ -267,20 +261,6 @@ input {
 	margin: 20px;
 }
 
-.contButton {
-	background: #000;
-	border: none;
-	width: 100px;
-	height: 40px;
-	color: white;
-	font-size: 1.5rem;
-	display:block;
-	margin: 20px 0;
-	float:left;
-}
-.contButton:hover {
-	background: #C33;
-}
 
 /*-------------------------------LOCATIONS*/
 

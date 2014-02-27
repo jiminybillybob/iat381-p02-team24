@@ -1,21 +1,14 @@
 /* grid.css; defining grids for my site*/
 
 [class*='col-']{
-	padding: 20px;
-	margin-bottom: 10px;
 	float:left;
+	margin:0px;
 	text-align:center;
 	position:relative;
-	background: rgba(255,255,255,1);
+	padding: 10px;
 }
 
 /* specifies width of grid*/
-
-.col-img{
-	padding:10px 8px;
-	margin:0px;
-}
-
 .col-1of1 {
 	width: 100%;
 }
@@ -26,21 +19,13 @@
 	width: 50%;
 }
 .col-1of3 {
-	width: 25%;
-}
-.col-2of3 {
-	width: 25%;
+	width: 24%;
 }
 .col-3of3 {
-	width: 50%;
+	width: 49%;
 }
 .col-1of3-equal {
 	width: 33.33%;
-}
-.col-login {
-	background:#000;
-	width: 30%;
-	margin-right:3.33%;
 }
 .col-2of3-equal {
 	width: 66.66%;
@@ -62,9 +47,6 @@
 
 /* when browser hits breakpoint of 800px width, col-1of2-equal reverts back to 100% width */
 @media (max-width: 780px) {
-	.col-1of1 {
-		width: 50%;
-	}
 	.col-1of2 {
 		width: 50%;
 	}
@@ -74,17 +56,13 @@
 	.col-1of3 {
 		width: 50%;
 	}
-	.col-2of3 {
-		width: 50%;
-	}
 	.col-3of3 {
 		width: 50%;
 	}
-	.col-login {
-		width: 50%;
-		margin-right:0;
-	}
 	.col-1of3-equal {
+	width: 50%;
+	}
+	.col-2of3-equal {
 	width: 50%;
 	}
 	.col-1of4 {
@@ -92,23 +70,13 @@
 	}
 }
 @media (max-width: 600px) {
-	.col-1of1 {
-		width: 100%;
-	}
 	.col-1of2 {
 		width: 100%;
-	}
-	.col-login {
-		width: 80%;
-		margin-right:0;
 	}
 	.col-1of2-equal {
 		width: 100%;
 	}
 	.col-1of3 {
-		width: 100%;
-	}
-	.col-2of3 {
 		width: 100%;
 	}
 	.col-3of3 {
@@ -117,6 +85,9 @@
 	.col-1of3-equal {
 		width: 100%;
 	}	
+	.col-2of3-equal {
+	width: 100%;
+	}
 	.col-1of4 {
 	width: 100%;
 	}
