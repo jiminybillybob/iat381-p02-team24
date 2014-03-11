@@ -7,7 +7,6 @@
 	position:relative;
 	padding: 10px;
 }
-
 /* specifies width of grid*/
 .col-1of1 {
 	width: 100%;
@@ -38,7 +37,6 @@
 	display: block;
 	clear: both;
 }
-
 *, *:after, *:before {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -68,6 +66,9 @@
 	.col-1of4 {
 	width: 50%;
 	}
+	#home-banner{
+		display:none;
+	}
 }
 @media (max-width: 600px) {
 	.col-1of2 {
@@ -86,12 +87,15 @@
 		width: 100%;
 	}	
 	.col-2of3-equal {
-	width: 100%;
+		width: 100%;
 	}
 	.col-1of4 {
-	width: 100%;
+		width: 100%;
 	}
 	.Button {
-	width: 100%
+		width: 100%
+	}
+	#home-banner{
+		display:none;
 	}
 }

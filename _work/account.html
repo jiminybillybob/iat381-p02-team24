@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-    	<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">           	
-        <link href="css/main.css" rel="stylesheet">
+    	<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<link href="css/main.css" rel="stylesheet">
         <link href="css/grid.css" rel="stylesheet">
         <script src="script/jquery.min.js"></script>
         <script src="script/script.js"></script>
@@ -24,22 +25,20 @@
 		</nav>
 
 <section><div class="grid container">
-    
+
+    <section>
     <article>
     	<div class="col-1of1"> 
         	<h1>Login</h1>
         </div>
-     
-     </article>
-     
-     <section>
+     </article>   
      <article>
         <div class="col-1of2-equal"> 
             <form name="loginForm">
                 <p>Username: <input type="text" name="username"></p>
                 <p>Password: <input type="text" name="pass"></p>
             </form>
-            <button type="submit" class="leftButton Button" onclick="window.location.href='confirmation.html'">Continue to Payment</button>
+            <button type="submit" class="leftButton Button" onclick="window.location.href='confirmation.html'">Continue</button>
         </div>
                 
 		<div class="col-1of2-equal"> 
@@ -48,11 +47,8 @@
 			
 			 <a href="confirmation.html"><img class="altLogin" src="images/facebook.png" /></a>
 			 <a href="confirmation.html"><img class="altLogin" src="images/twitter.png" /></a>
-			 <a href="confirmation.html"><img class="altLogin" src="images/google.png" /></a>
-			
-        </div>
-        
-        
+			 <a href="confirmation.html"><img class="altLogin" src="images/google.png" /></a>		
+        </div> 
     </article>
     </section>
     
@@ -65,13 +61,13 @@
     <article>
         <div class="col-1of2-equal">
             <form name="addressForm">
-                First name: <input type="text" name="first"><br>
-                Last name: <input type="text" name="last"><br>
-                Telephone: <input type="text" name="phone" placeholder=""><br>
-                Street: <input type="text" name="street"><br>
-                City: <input type="text" name="city"><br>
-                Zip code:<input type="text" name="zip"><br>
-                Province
+                <p>First name: <input type="text" name="first"></p>
+                <p>Last name: <input type="text" name="last"></p>
+                <p>Telephone: <input type="text" name="phone" placeholder=""></p>
+                <p>Street: <input type="text" name="street"></p>
+                <p>City: <input type="text" name="city"></p>
+                <p>Zip code:<input type="text" name="zip"></p>
+                <p>Province
                 <select name="mydropdown">
                     <option value="—">—</option>
                     <option value="AB">AB</option>
@@ -84,6 +80,7 @@
                     <option value="QC">QC</option>
                     <option value="SK">SK</option>
                 </select>
+                </p>
             </form> <!-- end of address form -->
         </div>  
         <div class="col-1of2-equal">

@@ -5,27 +5,13 @@ html {
 }
 
 body {
-	font-family: Oswald, Arial, Verdana, sans-serif;
-	font-weight:300;
+	font-family: 'oswald', sans-serif;
 	color: black;
 	height:100%;
 	width:100%;
 	padding: 0;
 	margin: 0;
 	background:#FFF url(../images/websiteBG3.jpg) repeat;
-}
-
-@font-face {
-    font-family: 'morning';
-    src: url('morning_star-webfont.eot');
-    src: url('morning_star-webfont.eot?#iefix') format('embedded-opentype'),
-         url('morning_star-webfont.woff') format('woff'),
-         url('morning_star-webfont.ttf') format('truetype'),
-         url('morning_star-webfont.svg#morning_starregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-	background:#000 ;
 }
 
 img {
@@ -37,7 +23,7 @@ a {
 	text-decoration:none;
 }
 p, ul, ol {
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 	text-align: left;
 	clear: both;
 	margin:8px 0;
@@ -45,7 +31,6 @@ p, ul, ol {
 
 hr {
 	display:block;
-	
 	height: 1px;
 	background:#000;
 	border:0px;
@@ -59,14 +44,7 @@ h1 {
 }
 
 h2 {
-	font-weight: normal;
 	font-size: 2.5rem; 
-	text-align: left;
-	margin:0;
-}
-h3 {
-	font-weight: normal;
-	font-size: 2.1rem; 
 	text-align: left;
 	margin:0;
 }
@@ -175,6 +153,16 @@ section .container {
 
 /*-------------------------------MENU*/
 
+.menu-item
+{
+	opacity:.95;
+}
+
+.menu-item:hover
+{
+	opacity:1;
+}
+
 #menu-categories {
 	top: 30px;
 	padding-top:98px;
@@ -232,9 +220,11 @@ form {
 }
 .leftButton {
 	float:left;
+	margin-right:5px;
 }
 .rightButton {
 	float:right;
+	margin-left:5px;
 }
 .smallButton {
 	background: #000;
@@ -261,7 +251,9 @@ input {
 	margin: 20px;
 }
 
-
+.rating p {
+	font-size:1.8rem;
+}
 .rating p:before {
 	content: "\2606 \2606 \2606 \2606 \2606";
 }
@@ -271,7 +263,8 @@ input {
 .altLogin {
 	float: left;
 	height: auto;
-	width: 50px;
+	width: 38px;
+	margin-right:9px;
 }
 
 /*-------------------------------LOCATIONS*/
