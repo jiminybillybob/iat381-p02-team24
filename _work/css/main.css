@@ -28,6 +28,7 @@ a {
 }
 p, ul, ol {
 	font-size: 1.4rem;
+	font-family: cabin;
 	text-align: left;
 	clear: both;
 	margin:8px 0;
