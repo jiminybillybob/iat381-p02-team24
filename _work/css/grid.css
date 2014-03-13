@@ -7,7 +7,7 @@
 	position:relative;
 	padding: 10px;
 }
-/* specifies width of grid*/
+/* specifies width of grids*/
 .col-1of1 {
 	width: 100%;
 }
@@ -43,7 +43,7 @@
 	box-sizing: border-box;
 }
 
-/* when browser hits breakpoint of 800px width, col-1of2-equal reverts back to 100% width */
+/* when browser hits breakpoint of 800px width, columns go to 100% width */
 @media (max-width: 780px) {
 	.col-1of2 {
 		width: 50%;
@@ -70,6 +70,8 @@
 		display:none;
 	}
 }
+
+/* when browser hits breakpoint of 800px width, columns go to 100% width */
 @media (max-width: 600px) {
 	.col-1of2 {
 		width: 100%;
