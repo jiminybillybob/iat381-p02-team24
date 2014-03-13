@@ -32,9 +32,9 @@
 	    <section><div class="grid container">
 	      
 			<div id="menu-categories">
-				<a href="menu.html#hiroshima"><img class="category_button" src="images/hiroshimaButton.png"></a>
-	            <a href="menu.html#osaka"><img class="category_button" src="images/osakaButton.png"></a>
-	            <a href="menu.html#monjayaki"><img class="category_button" src="images/monjayakiButton.png"></a>
+				<a href="menu.html#hiroshima"><img class="category_button" src="images/hiroshimaButton.png" alt="Toshima District"></a>
+	            <a href="menu.html#osaka"><img class="category_button" src="images/osakaButton.png" alt="Shibuya District"></a>
+	            <a href="menu.html#monjayaki"><img class="category_button" src="images/monjayakiButton.png" alt="Kito District"></a>
 	      	</div>  
 	      
 	      
@@ -74,12 +74,12 @@
 	              		<option value="8">8</option>
 	              		<option value="9">9</option>
 	          		</select>
-	          		<a href="orders.html">
-	         	 		<button type="submit" class="leftButton Button" onclick="window.location.href='#'">Add to Order</button>
-	          		</a>
-					<a href="menu.html">
-	         	 		<button type="submit" class="leftButton Button" onclick="window.location.href='#'">Back to Menu</button>
-	          		</a>
+	          		
+	         	 	<button type="submit" class="leftButton Button" onclick="window.location.href='orders.html'">Add to Order</button>
+	          		
+				
+	         	 	<button type="submit" class="leftButton Button" onclick="window.location.href='menu.html'">Back to Menu</button>
+	          		
 	       		</div>
 			</article>
 	        
@@ -91,18 +91,18 @@
 				
 	            <div class="col-1of2-equal">
 					<form name="commentForm">
-						Name: <input type="text" name="name">
+						<p>Name: <input type="text" name="name"></p>
 					</form>
-					<form action="" method="post">
-						Let us know what you think:<br />
+					<form method="post">
+						<p>Let us know what you think:
 						<textarea name="comments" style="width: 100%" rows="7">
-						</textarea> <br>
+						</textarea> </p>
 					</form>				
 					<form name="commentForm" class="rating">
 	                	Rating
 						<p></p>
 					</form>				
-					<button type="submit" class="leftButton Button" onclick="#">
+					<button type="submit" class="leftButton Button">
 						Submit
 					</button>
 				</div> <!-- end of col-1of2-equal -->
@@ -141,6 +141,7 @@
 					<p><strong>Tom Patty</strong></p>
 					<p>★★★★★</p>
 					<p>This pizza is amazing. This website is AMAZING as well. Wow! A+ in my books. I wish I was as talented as whoever made this website. #majorjells</p>
+					<hr>
 				</div> <!-- End of review right column -->
 				
 	        </article> <!-- end of product review article -->       
