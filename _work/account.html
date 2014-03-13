@@ -3,17 +3,17 @@
 	<head>
     	<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-<link href="css/main.css" rel="stylesheet">
+		<link href="css/main.css" rel="stylesheet">
         <link href="css/grid.css" rel="stylesheet">
         <script src="script/jquery.min.js"></script>
         <script src="script/script.js"></script>
 		<title>Tokyo Pizza Club</title>
 	</head>
-	<body>
-    
+	
+	<body>    
 		<nav>
         	<div class="container">
-              <A href="index.html"><div id="logo"><img src="images/nav_logo.png"></div></a>
+              <a href="index.html"><div id="logo"><img src="images/nav_logo.png"></div></a>
               <div id="nav-links">
                 <a href="menu.html"><div class="nav-button">MENU</div></a>
                 <a href="location.html"><div class="nav-button">LOCATIONS</div></a>
@@ -24,96 +24,94 @@
             </div>
 		</nav>
 
-<section><div class="grid container">
-
-    <section>
-    <article>
-    	<div class="col-1of1"> 
-        	<h1>Login</h1>
-        </div>
-     </article>   
-     <article>
-        <div class="col-1of2-equal"> 
-            <form name="loginForm">
-                <p>Username: <input type="text" name="username"></p>
-                <p>Password: <input type="text" name="pass"></p>
-            </form>
-            <button type="submit" class="leftButton Button" onclick="window.location.href='confirmation.html'">Continue</button>
-        </div>
+		<section><div class="grid container">
+    		<section>
+    			<article>
+    				<div class="col-1of1"> 
+        				<h1>Login</h1>
+        			</div>
+     			</article>   
+     			<article>
+        			<div class="col-1of2-equal"> 
+            			<form name="loginForm">
+                			<p>Username: <input type="text" name="username"></p>
+                			<p>Password: <input type="text" name="pass"></p>
+            			</form>
+            				<button type="submit" class="leftButton Button" onclick="window.location.href='confirmation.html'">Continue</button>
+        			</div>
                 
-		<div class="col-1of2-equal"> 
-        	<p>By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.</p>
-			<p>Alternatively, you can login using either your FaceBook, Twitter, or Google+ account.</p>
-			
-			 <a href="confirmation.html"><img class="altLogin" src="images/facebook.png" /></a>
-			 <a href="confirmation.html"><img class="altLogin" src="images/twitter.png" /></a>
-			 <a href="confirmation.html"><img class="altLogin" src="images/google.png" /></a>		
-        </div> 
-    </article>
-    </section>
+					<div class="col-1of2-equal"> 
+        				<p>By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.</p>
+						<p>Alternatively, you can login using either your FaceBook, Twitter, or Google+ account.</p>			
+			 			<a href="confirmation.html"><img class="altLogin" src="images/facebook.png" /></a>
+			 			<a href="confirmation.html"><img class="altLogin" src="images/twitter.png" /></a>
+			 			<a href="confirmation.html"><img class="altLogin" src="images/google.png" /></a>		
+        			</div> 
+    			</article>
+    		</section>
     
-    <section>
-    <article>
-    	<div class="col-1of1"> 
-        	<h1>Or Sign up</h1>
-        </div>
-   </article>
-    <article>
-        <div class="col-1of2-equal">
-            <form name="addressForm">
-                <p>First name: <input type="text" name="first"></p>
-                <p>Last name: <input type="text" name="last"></p>
-                <p>Telephone: <input type="text" name="phone" placeholder=""></p>
-                <p>Street: <input type="text" name="street"></p>
-                <p>City: <input type="text" name="city"></p>
-                <p>Zip code:<input type="text" name="zip"></p>
-                <p>Province
-                <select name="mydropdown">
-                    <option value="—">—</option>
-                    <option value="AB">AB</option>
-                    <option value="BC">BC</option>
-                    <option value="MB">MB</option>
-                    <option value="NB">NB</option>
-                    <option value="NL">NL</option>
-                    <option value="ON">ON</option>
-                    <option value="PE">PE</option>
-                    <option value="QC">QC</option>
-                    <option value="SK">SK</option>
-                </select>
-                </p>
-            </form> <!-- end of address form -->
-        </div>  
-        <div class="col-1of2-equal">
-            <form name="paymentForm">
-                <p>
-                    Card type:
-                    <select name="mydropdown">
-                    <option value="—">—</option>
-                    <option value="Visa">Visa</option>
-                    <option value="MasterCard">MasterCard</option>
-                    </select>
-                </p>
-                <p>
-                Card number: <input type="text" name="cardnum">
-                </p>
-                <p>Security number:</p>
-                <input type="text" name="securitynum"></p>
-                <p>Expiry date:</p>
-                <input type="text" name="month" placeholder="(mm/yy)"></p>
-                </form> 
-                <section>
-                <button type="submit" class="leftButton Button" onclick="window.location.href='confirmation.html'">Create Account
-                </button>
-                </section>  
-        </div>
-    </article>
-    </section>
-</div></section>
+    		<section>
+    			<article>
+    				<div class="col-1of1"> 
+        				<h1>Or Sign up</h1>
+        			</div>
+   				</article>
+    			
+    			<article>
+        			<div class="col-1of2-equal">
+            			<form name="addressForm">
+                			<p>First name: <input type="text" name="first"></p>
+                			<p>Last name: <input type="text" name="last"></p>
+                			<p>Telephone: <input type="text" name="phone" placeholder=""></p>
+                			<p>Street: <input type="text" name="street"></p>
+                			<p>City: <input type="text" name="city"></p>
+                			<p>Zip code:<input type="text" name="zip"></p>
+                			<p>Province
+                			<select name="mydropdown">
+                    			<option value="—">—</option>
+                    			<option value="AB">AB</option>
+                    			<option value="BC">BC</option>
+                    			<option value="MB">MB</option>
+                    			<option value="NB">NB</option>
+                    			<option value="NL">NL</option>
+                   				<option value="ON">ON</option>
+                    			<option value="PE">PE</option>
+                    			<option value="QC">QC</option>
+                    			<option value="SK">SK</option>
+                			</select>
+                			</p>
+            			</form> <!-- end of address form -->
+        			</div>  
+        			
+        			<div class="col-1of2-equal">
+            			<form name="paymentForm">                		
+                    		<p>Card type:
+                    		<select name="mydropdown">
+                    			<option value="—">—</option>
+                    			<option value="Visa">Visa</option>
+                    			<option value="MasterCard">MasterCard</option>
+                    		</select>
+                			</p>
+                			
+                			<p>Card number: <input type="text" name="cardnum"></p>
+                			<p>Security number:</p>
+                			<input type="text" name="securitynum"></p>
+                			<p>Expiry date:</p>
+                			<input type="text" name="month" placeholder="(mm/yy)"></p>
+                		</form> 
+                		<section>
+                			<button type="submit" class="leftButton Button" onclick="window.location.href='confirmation.html'">Create Account
+                			</button>
+                		</section>  
+        			</div>
+    			</article>
+    		</section>
+		</div></section> <!-- end of grid container -->
 
         <footer>
             <div class="container">
-            <p>3100 West Cary Street  |  Richmond, VA 23221  |  804.355.4383</p>
-          </div>
+            	<p>3100 West Cary Street  |  Richmond, VA 23221  |  804.355.4383</p>
+          	</div>
         </footer> 
 	
   </body>
